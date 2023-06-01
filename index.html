@@ -17,11 +17,17 @@
   </div>
   
   <h1>Hello</h1>
+  <button id="playButton">Click Me</button>
 
   <script>
-    setTimeout(50000);
     const video = document.getElementById("video");
-    video.play();
+    const playButton = document.getElementById("playButton");
+    console.log(playButton)
+    playButton.addEventListener("click", () => {
+      // console.log("hello");
+      video.play();
+      // console.log("hello")
+    });
   </script>
 
 </body>
